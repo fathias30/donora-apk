@@ -11,16 +11,7 @@
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
         <action
-            android:id="@+id/action_homeFragment_to_stoockFragment"
-            app:destination="@id/stoockFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/stoockFragment"
-        android:name="com.example.donora_ui.ui.fragment.StoockFragment"
-        android:label="fragment_stoock"
-        tools:layout="@layout/fragment_stoock" >
-        <action
-            android:id="@+id/action_stoockFragment_to_homeFragment"
-            app:destination="@id/homeFragment" />
+            android:id="@+id/action_homeFragment_to_stoockFragment" />
+            <!-- app:destination="" /> -->
     </fragment>
 </navigation>

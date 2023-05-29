@@ -483,13 +483,13 @@
                     android:fontFamily="@font/rbold"
                     android:text="Sedang Dibutuhkan" />
 
-                <androidx.cardview.widget.CardView
-                    android:layout_width="320dp"
-                    android:layout_height="120dp"
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="330dp"
+                    android:layout_height="145dp"
                     android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="10dp"
-                    app:cardCornerRadius="20dp"
-                    app:cardElevation="7dp"/>
+                    android:orientation="horizontal"
+                    tools:listitem="@layout/item_banner"
+                    app:cardCornerRadius="20dp" />
             </LinearLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
