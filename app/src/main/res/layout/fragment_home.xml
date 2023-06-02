@@ -487,7 +487,6 @@
                     android:layout_width="330dp"
                     android:layout_height="145dp"
                     android:layout_gravity="center_horizontal"
-                    android:orientation="horizontal"
                     tools:listitem="@layout/item_banner"
                     app:cardCornerRadius="20dp" />
             </LinearLayout>
