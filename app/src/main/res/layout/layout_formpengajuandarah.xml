@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/bannerform"
+        android:layout_width="352dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bannerpengajuandarah"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="49dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/ajukan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rbold"
+            android:text="Ajukan Permintaan Darah"
+            android:textColor="#ffffff"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/pastikan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rmedium"
+            android:text="Pastikan darah tidak ada di stok"
+            android:textColor="#ffffff"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bannerform">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/namalengkap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rsemibold"
+                android:text="Nama Lengkap"
+                android:textColor="#2B2D42"
+                android:textSize="12dp" />
+
+            <EditText
+                android:id="@+id/fieldnamalengkap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rmedium"
+                android:hint="Daud Sony Wakwaw"
+                android:inputType="text"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/notelp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rsemibold"
+                android:text="No. Telp"
+                android:textColor="#2B2D42"
+                android:textSize="12dp" />
+
+            <EditText
+                android:id="@+id/fieldnotelp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rmedium"
+                android:hint="089633375040"
+                android:inputType="number"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/provinsi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rsemibold"
+                android:text="Provinsi"
+                android:textColor="#2B2D42"
+                android:textSize="12dp" />
+
+            <Spinner
+                android:id="@+id/fieldprovinsi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rmedium"
+                android:hint="Jawa Timur"
+                android:inputType="number"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/kotakabupaten"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rsemibold"
+                android:text="Kota/Kabupaten"
+                android:textColor="#2B2D42"
+                android:textSize="12dp" />
+
+            <Spinner
+                android:id="@+id/fieldkotakabupaten"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rmedium"
+                android:hint="Kota Surabaya"
+                android:inputType="number"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/kecamatan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rsemibold"
+                android:text="Kecamatan"
+                android:textColor="#2B2D42"
+                android:textSize="12dp" />
+
+            <Spinner
+                android:id="@+id/fieldkecamatan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rmedium"
+                android:hint="Tandes"
+                android:inputType="number"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/alamatlengkap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rsemibold"
+                android:text="Alamat Lengkap"
+                android:textColor="#2B2D42"
+                android:textSize="12dp" />
+
+            <EditText
+                android:id="@+id/fieldalamatlengkap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rmedium"
+                android:hint="Jl. Ahmad Yani No.88, Ketintang, Kec. Gayungan, Surabaya, Jawa Timur 60231"
+                android:inputType="number"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/goldar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rsemibold"
+                android:text="Gol. Darah yang Dibutuhkan"
+                android:textColor="#2B2D42"
+                android:textSize="12dp" />
+
+            <Spinner
+                android:id="@+id/fieldgoldar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rmedium"
+                android:hint="O+"
+                android:inputType="number"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/produkdarah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rsemibold"
+                android:text="Produk Darah yang Dibutuhkan"
+                android:textColor="#2B2D42"
+                android:textSize="12dp" />
+
+            <Spinner
+                android:id="@+id/fieldprodukdarah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rmedium"
+                android:hint="Plasma Darah"
+                android:inputType="number"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/kepentingan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rsemibold"
+                android:text="Kepentingan"
+                android:textColor="#2B2D42"
+                android:textSize="12dp" />
+
+            <EditText
+                android:id="@+id/fieldkepentingan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rmedium"
+                android:hint="Untuk ini"
+                android:inputType="number"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/deskripsi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rsemibold"
+                android:text="Deskripsi"
+                android:textColor="#2B2D42"
+                android:textSize="12dp" />
+
+            <EditText
+                android:id="@+id/fielddeskripsi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rmedium"
+                android:hint="Saya membutuhkan 10 kantong untuk ..."
+                android:inputType="number"
+                android:textSize="12dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/buttonkirim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonmerah"
+        android:fontFamily="@font/rbold"
+        android:gravity="center"
+        android:text="Kirim Ajuan"
+        android:textColor="#ffffff"
+        android:layout_marginTop="40dp"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

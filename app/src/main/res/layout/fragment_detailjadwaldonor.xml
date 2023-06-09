@@ -44,8 +44,8 @@
                 android:id="@+id/share"
                 android:layout_width="17dp"
                 android:layout_height="17dp"
-                android:layout_marginLeft="50dp"
                 android:layout_gravity="center"
+                android:layout_marginLeft="50dp"
                 app:srcCompat="@drawable/share" />
         </LinearLayout>
 
@@ -60,7 +60,7 @@
         app:cardCornerRadius="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" >
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
         <ImageView
             android:id="@+id/iconjadwaldonor"
@@ -86,8 +86,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/rbold"
-            android:textColor="#2B2D42"
-            android:text="UTD PMI Surabaya" />
+            android:text="UTD PMI Surabaya"
+            android:textColor="#2B2D42" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -105,11 +105,11 @@
                 android:id="@+id/tanggal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="#2B2D42"
-                android:fontFamily="@font/rmedium"
-                android:textSize="12dp"
                 android:layout_marginLeft="10dp"
-                android:text="12 Desember 2023" />
+                android:fontFamily="@font/rmedium"
+                android:text="12 Desember 2023"
+                android:textColor="#2B2D42"
+                android:textSize="12dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -128,11 +128,11 @@
                 android:id="@+id/jam"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#2B2D42"
-                android:fontFamily="@font/rmedium"
-                android:textSize="12dp"
                 android:layout_marginLeft="10dp"
-                android:text="10.00 - 16.00 WIB" />
+                android:fontFamily="@font/rmedium"
+                android:text="10.00 - 16.00 WIB"
+                android:textColor="#2B2D42"
+                android:textSize="12dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -151,11 +151,11 @@
                 android:id="@+id/textView7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#2B2D42"
-                android:fontFamily="@font/rmedium"
-                android:textSize="12dp"
                 android:layout_marginLeft="10dp"
-                android:text="Jl. Embong Ploso No.7-15, Embong Kaliasin, Kec. Genteng, Surabaya, Jawa Timur 60271" />
+                android:fontFamily="@font/rmedium"
+                android:text="Jl. Embong Ploso No.7-15, Embong Kaliasin, Kec. Genteng, Surabaya, Jawa Timur 60271"
+                android:textColor="#2B2D42"
+                android:textSize="12dp" />
         </LinearLayout>
     </LinearLayout>
 
@@ -163,13 +163,13 @@
         android:id="@+id/alamat"
         android:layout_width="340dp"
         android:layout_height="180dp"
-        android:orientation="horizontal"
         android:layout_marginTop="20dp"
+        android:background="@drawable/maps"
+        android:orientation="horizontal"
         app:cardCornerRadius="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/keterangan"
-        android:background="@drawable/maps">
+        app:layout_constraintTop_toBottomOf="@+id/keterangan">
 
         <ImageView
             android:id="@+id/imageView2"
@@ -178,17 +178,19 @@
             app:srcCompat="@drawable/maps" />
     </androidx.cardview.widget.CardView>
 
-    <Button
-        android:id="@+id/button"
+    <TextView
+        android:id="@+id/buttonIngatkan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ingatkan saya"
+        android:text="Ingatkan Saya"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/rbold"
         android:textColor="#ffffff"
-        android:backgroundTint="@color/redDonora"
-        app:circularflow_radiusInDP="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="center"
+        android:background="@drawable/buttonmerah"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/alamat" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
