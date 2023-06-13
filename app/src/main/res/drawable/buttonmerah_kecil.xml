@@ -2,6 +2,6 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
     <solid android:color="#D80032" /> <!-- Ubah warna latar belakang sesuai keinginan -->
     <corners android:radius="25dp" />
-    <size android:width="300dp"
-        android:height="35dp" /><!-- Sesuaikan radius dengan setengah dari lebar/tinggi lingkaran -->
+    <size android:width="50dp"
+        android:height="20dp" /><!-- Sesuaikan radius dengan setengah dari lebar/tinggi lingkaran -->
 </shape>

@@ -26,7 +26,7 @@
             android:gravity="center"
             android:fontFamily="@font/rbold"
             android:textColor="#2B2D42"
-            android:text="Ajuan berhasil terkirim!" />
+            android:text="Pengingat berhasil\ndiaktifkan!" />
 
         <TextView
             android:id="@+id/sedangkamiproses"
@@ -37,7 +37,7 @@
             android:fontFamily="@font/rmedium"
             android:textColor="#2B2D42"
             android:textSize="12dp"
-            android:text="Pengajuan stok darah kamu sedang kami proses. Kami akan menghubungimu untuk informasi selanjutnya." />
+            android:text="Pengingat untuk jadwal donor darah ini berhasil dibuat. " />
 
         <TextView
             android:id="@+id/oke"

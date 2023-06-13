@@ -3,13 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#EDF2F4">
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="160dp"
+        android:layout_height="120dp"
         android:background="@color/redDonora"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,7 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="45dp"
-            android:layout_marginTop="35dp"
+            android:layout_marginTop="45dp"
             android:orientation="horizontal">
 
             <ImageView
@@ -31,50 +30,54 @@
                 app:srcCompat="@drawable/back" />
 
             <TextView
-                android:id="@+id/jadwaldonorlist"
+                android:id="@+id/notifikasi"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="63dp"
+                android:layout_marginLeft="110dp"
                 android:fontFamily="@font/rbold"
-                android:text="Jadwal Donor Darah"
+                android:text="Notifikasi"
                 android:textColor="#ffffff"
                 android:textSize="18dp" />
+
         </LinearLayout>
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/field_search"
-            android:layout_width="330dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="28dp"
-            app:cardCornerRadius="50dp"
-            app:srcCompat="@drawable/field_search">
+    </LinearLayout>
 
-            <EditText
-                android:id="@+id/carilokasi"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="35dp"
-                android:layout_marginRight="35dp"
-                android:fontFamily="@font/rmedium"
-                android:ems="10"
-                android:textSize="12dp"
-                android:hint="Cari lokasi di sini, bestie ..."
-                android:inputType="text"
-                android:textColorHint="#2B2D42" />
-        </androidx.cardview.widget.CardView>
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="340dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:background="@drawable/style_spinnerurutkan" />
+
+        <TextView
+            android:id="@+id/telahdibaca"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:fontFamily="@font/rmedium"
+            android:gravity="right"
+            android:text="Tandai Telah Dibaca"
+            android:textColor="#602B2D42" />
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="370dp"
         android:layout_height="110dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp"
         android:paddingLeft="6dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        tools:listitem="@layout/item_jadwaldonor" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        tools:listitem="@layout/item_notifikasi" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
