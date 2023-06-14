@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/redDonora">
+
+    <LinearLayout
+        android:layout_width="270dp"
+        android:layout_height="180dp"
+        android:background="@drawable/bg_kotakputih"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/berhasilterkirim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:fontFamily="@font/rbold"
+            android:textColor="#2B2D42"
+            android:text="Konfirmasi terkirim!" />
+
+        <TextView
+            android:id="@+id/sedangkamiproses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/rmedium"
+            android:textColor="#2B2D42"
+            android:textSize="12dp"
+            android:text="Terimakasih telah bersedia untuk berpartisipasi donor darah. Untuk informasi selanjutnya, kamu akan menghubungimu! " />
+
+        <TextView
+            android:id="@+id/oke"
+            android:layout_width="70dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:background="@drawable/buttonmerah_kecil"
+            android:fontFamily="@font/rbold"
+            android:textColor="#ffffff"
+            android:textSize="12dp"
+            android:text="OKE" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:drawablePadding="5dp"
+            android:drawableStart="@drawable/warning_white"
+            android:fontFamily="@font/rbold"
+            android:textColor="#ffffff"
+            android:background="@drawable/bg_tag_red"
+            android:text="URGENT!" />
+
+        <TextView
+            android:id="@+id/dibutuhkan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/rbold"
+            android:text="Dibutuhkan Plasma Darah B+ untuk istri melahirkan"
+            android:textColor="#2B2D42" />
+
+        <TextView
+            android:id="@+id/deskripsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/rmedium"
+            android:text="ini adalah deskripsi mengenai notifikasi dibutuhkan plasma darah ini adalah deskripsi mengenai notifikasi dibutuhkan plasma darah ini adalah deskripsi mengenai notifikasi dibutuhkan plasma darah "
+            android:textColor="#2B2D42" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:background="#FBFBFB">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/namalengkapnotif"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:fontFamily="@font/rsemibold"
+                    android:text="Nama Lengkap"
+                    android:textColor="#2B2D42" />
+
+                <TextView
+                    android:id="@+id/hintnamanotif"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:fontFamily="@font/rmedium"
+                    android:text="Daud Sony Wakwaw"
+                    android:textColor="#702B2D42" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#D9D9D9" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/alamatlengkapnotif"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:fontFamily="@font/rsemibold"
+                    android:text="Alamat Lengkap"
+                    android:textColor="#2B2D42" />
+
+                <TextView
+                    android:id="@+id/hintalamatnotif"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:fontFamily="@font/rmedium"
+                    android:text="Jl. Ahmad Yani No.88, Ketintang, Kec. Gayungan, Surabaya, Jawa Timur 60231"
+                    android:textColor="#702B2D42" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#D9D9D9" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/goldarnotif"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:fontFamily="@font/rsemibold"
+                    android:text="Gol. Darah yang dibutuhkan"
+                    android:textColor="#2B2D42" />
+
+                <TextView
+                    android:id="@+id/hintgoldarnotif"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:fontFamily="@font/rmedium"
+                    android:text="O+"
+                    android:textColor="#702B2D42" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#D9D9D9" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/produkdarahnotif"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:fontFamily="@font/rsemibold"
+                    android:text="Produk Darah yang dibutuhkan"
+                    android:textColor="#2B2D42" />
+
+                <TextView
+                    android:id="@+id/hintprodukdarahnotif"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:fontFamily="@font/rmedium"
+                    android:text="Plasma Darah"
+                    android:textColor="#702B2D42" />
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#D9D9D9" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/kamisangat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rmedium"
+            android:text="Kami sangat mengharapkan kebaikan hati Anda untuk membantu kami dalam menyumbangkan darah yang akan sangat berarti bagi kami dan bagi mereka yang membutuhkan. Klik tombol ‘Saya Bersedia’ untuk mengonfirmasi kesediaan kamu."
+            android:textColor="#2B2D42" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/buttonbersedia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonmerah"
+        android:fontFamily="@font/rbold"
+        android:gravity="center"
+        android:text="Saya Bersedia"
+        android:textColor="#ffffff"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+</androidx.constraintlayout.widget.ConstraintLayout>
